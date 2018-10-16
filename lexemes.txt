@@ -5,6 +5,12 @@
  paradigm: poly_V_intr
  trans_ru: иметься
 -lexeme
+ lex: [ен]
+ stem: .й.
+ gramm: V,intr
+ paradigm: V_minus_6_jen
+ trans_ru: иметься
+-lexeme
  lex: [лъын]
  stem: .лъ.//.лъы.
  gramm: V,intr
@@ -96,6 +102,42 @@
  gramm: p.2sg,poss
  gloss: P.2SG+POSS
  paradigm: zero
+-lexeme
+ lex: уси
+ stem: уси.
+ gramm: 2.abs,sg.abs,p.1sg,poss
+ gloss: 2SG.ABS+P.1SG+POSS
+ paradigm: zero
+-lexeme
+ lex: ури
+ stem: ури.
+ gramm: 2.abs,sg.abs,p.3sg,poss
+ gloss: 2SG.ABS+POSS
+ paradigm: zero
+-lexeme
+ lex: сыри
+ stem: сыри.
+ gramm: 1.abs,sg.abs,p.3sg,poss
+ gloss: 1SG.ABS+POSS
+ paradigm: zero
+-lexeme
+ lex: сыря
+ stem: сыря.
+ gramm: 1.abs,sg.abs,p.3pl,poss
+ gloss: 1SG.ABS+3PL.P+POSS
+ paradigm: zero
+-lexeme
+ lex: ия
+ stem: ия.
+ gramm: p.3sg,ord
+ gloss: POSS+ORD
+ paradigm: zero
+-lexeme
+ lex: яя
+ stem: яя.
+ gramm: p.3pl,ord
+ gloss: 3PL.P+POSS+ORD
+ paradigm: zero
 
 
 -lexeme
@@ -107,9 +149,9 @@
 -lexeme
  lex: NONE
  stem: рэ.
- gramm: sg,abs
- gloss: ORD
- paradigm: ord
+ gramm: adj
+ gloss: ADJ
+ paradigm: zero
 -lexeme
  lex: NONE
  stem: м.
@@ -3728,6 +3770,24 @@
  gramm: N,famn
  paradigm: poly_N
  trans_ru: Абаев
+-lexeme
+ lex: Иван
+ stem: .иван.
+ gramm: N,persn
+ paradigm: poly_N
+ trans_ru: Иван
+-lexeme
+ lex: Нэфсэт
+ stem: .нэфсэт.
+ gramm: N,persn
+ paradigm: poly_N
+ trans_ru: Нэфсэт
+-lexeme
+ lex: Айщэт
+ stem: .айщэт.
+ gramm: N,persn
+ paradigm: poly_N
+ trans_ru: Айщэт
 -lexeme
  lex: Абдаллэ
  stem: .абдаллэ.//.абдалл.
@@ -19374,6 +19434,12 @@
  gramm: N,rus
  paradigm: poly_N
  trans_ru: судья
+-lexeme
+ lex: хьыкум
+ stem: .хьыкум.
+ gramm: N
+ paradigm: poly_N
+ trans_ru: суд
 -lexeme
  lex: алимент
  stem: .алимент.//.алименты.
@@ -48588,9 +48654,9 @@
  trans_ru: Маш
 -lexeme
  lex: Мэщбашӏ
- stem: мэщбашӏ.//мэщбашӏы.
+ stem: мэщбэшӏ.//мэщбэшӏэ.|мэщбашӏ.//мэщбашӏэ.|мэщбэшӏ.//мэщбэшӏэ.
  paradigm: poly_N_famn
- gramm: N,famn
+ gramm: N,famn|N,famn,alt_stem,alt_stem1|N,famn
  trans_ru: Машбаш
 -lexeme
  lex: Мэщлӏэкъу
@@ -67720,8 +67786,14 @@
 -lexeme
  lex: аужыпкъ
  stem: .аужыпкъэ.
- gramm: ADJ
- paradigm: poly_ADJ
+ gramm: A
+ paradigm: poly_A
+ trans_ru: последний
+-lexeme
+ lex: аужырэ
+ stem: .аужырэ.//.аужыр.
+ gramm: A
+ paradigm: poly_A
  trans_ru: последний
 -lexeme
  lex: афган
@@ -67830,6 +67902,12 @@
  stem: .бгъу.
  gramm: NUM
  paradigm: poly_NUM
+ trans_ru: девять
+-lexeme
+ lex: бгъу
+ stem: .бгъ.
+ gramm: NUM
+ paradigm: poly_NUM_o
  trans_ru: девять
 -lexeme
  lex: бгъу
@@ -68750,6 +68828,12 @@
  gramm: N
  paradigm: poly_N_inalien
  trans_ru: сердце
+-lexeme
+ lex: гупч
+ stem: .гупчэ.//.гупч.
+ gramm: N
+ paradigm: poly_N_inalien
+ trans_ru: середина
 -lexeme
  lex: гуадзэ
  stem: .гуэдзэ.//.гуэдз.|.гуэдза.|.гуадзэ.//.гуадз.
@@ -75326,6 +75410,12 @@
  paradigm: poly_POST
  trans_ru: до
 -lexeme
+ lex: нэужым
+ stem: .нэужым.
+ gramm: ADV
+ paradigm: poly_ADV
+ trans_ru: позже, после
+-lexeme
  lex: нэутх
  stem: .нэутх.//.нэутхы.
  gramm: A
@@ -78370,9 +78460,9 @@
  trans_ru: воровать
 -lexeme
  lex: тыгъуасэ
- stem: .тыгъуэсэ.//.тыгъуэс.|.тыгъуэса.|.тыгъуасэ.//.тыгъуас.
+ stem: .тыгъосэ.//.тыгъос.|.тыгъоса.|.тыгъуасэ.//.тыгъуас.
  gramm: ADV|ADV,alt_stem,alt_stem1|ADV,alt_stem,alt_stem2
- paradigm: poly_ADV
+ paradigm: poly_N
  trans_ru: вчера
 -lexeme
  lex: тыгъужъ
@@ -78591,6 +78681,12 @@
  paradigm: poly_NUM
  trans_ru: сорок
 -lexeme
+ lex: тӏокӏитӏу
+ stem: .тӏокӏитӏ.
+ gramm: NUM
+ paradigm: poly_NUM_o
+ trans_ru: сорок
+-lexeme
  lex: тӏокӏищ
  stem: .тӏокӏищ.
  gramm: NUM
@@ -78613,6 +78709,12 @@
  stem: .тӏу.
  gramm: NUM
  paradigm: poly_NUM
+ trans_ru: два
+-lexeme
+ lex: тӏу
+ stem: .тӏ.
+ gramm: NUM
+ paradigm: poly_NUM_o
  trans_ru: два
 -lexeme
  lex: тӏуалэ
@@ -82489,7 +82591,13 @@
  stem: .шы.//.ш.
  gramm: N
  paradigm: poly_N_inalien
- trans_ru: брат; лошадь
+ trans_ru: брат
+-lexeme
+ lex: шы
+ stem: .шы.//.ш.
+ gramm: N
+ paradigm: poly_N
+ trans_ru: лошадь
 -lexeme
  lex: шыбзы
  stem: .шыбзы.//.шыбз.
@@ -83396,12 +83504,6 @@
  gramm: N
  paradigm: poly_N
  trans_ru: японец
--lexeme
- lex: ятӏокӏэнэр
- stem: .ятӏокӏэнэр.
- gramm: ANUM
- paradigm: poly_ANUM
- trans_ru: двадцатый
 -lexeme
  lex: ӏ
  stem: .ӏ.//.ӏы.
