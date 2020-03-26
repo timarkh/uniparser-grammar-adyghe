@@ -17220,7 +17220,7 @@
 -lex_rule
  -search
   stem: .е.
-  wfGlossed: (?:^|[+-])п[аэ]?[-+].*?[яе]
+  wfGlossed: (?:^|[+-])п[аэ]?[-+].*?[яей]
  -add
   lex2: пае
   gramm2: POST  
@@ -26669,3 +26669,11 @@
   lex2: ӏэщэ
   gramm2: A  
   trans_ru2: однорукий
+-lex_rule
+ -search
+  lex: хьау
+  gloss: .*-COND-ADD
+ -add
+  lex2: хьауми
+  gramm2: CONJ  
+  trans_ru2: или
