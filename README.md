@@ -19,16 +19,16 @@ uniparser-grammar-adyghe
 - формализованное описание парадигм с частеречными переходами (``paradigms_NtoV.txt``) -- для случаев, когда, например, именные основы употребляются с глагольными аффиксами;
 - дополнительные лексические правила, присваивающие вторичные леммы и переводы некомпозициональным сочетаниям основ и аффиксов (``lex_rules.txt``);
 - набор правил, запрещающих некоторые разборы как невозможные (``bad_analyses.txt``);
-- набор скриптов **UniParser** (папка ``UniParser``), которые осуществляют морфологический анализ.
+- набор скриптов **UniParser** (папка ``analyzer``), которые осуществляют морфологический анализ.
 
 Анализатором можно восользоваться следующими способами:
 
 1. Использовать список размеченных слов (около 400 тысяч уникальных словоформ), встретившихся в текстах Адыгейского корпуса. Пожалуйста, свяжитесь с авторами, если Вы хотите использовать этот список (он слишком велик, чтобы его можно было хранить в репозитории).
 
 2. Запустить анализатор на списке словоформ, составленном по Вашим текстам. Для этого нужно выполнить следующие шаги:
-	- В папку ``UniParser`` нужно положить файлы ``lexemes.txt``, ``paradigms.txt``, ``lex_rules.txt`` и ``bad_analyses.txt``.
+	- В папку ``analyzer`` нужно положить файлы ``lexemes.txt``, ``paradigms.txt``, ``lex_rules.txt`` и ``bad_analyses.txt``.
 	- В ту же папку нужно положить частотный список словоформ, которые необходимо проанализировать. Список должен содержать на каждой строке одну словоформу, затем знак табуляции, а затем её частотность. (Частотности необходимы только для подсчёта процента разобранных словоформ; если Вам он не нужен, можно всем словам приписать частотность 1.) Файл со списком должен называться ``wordlist.csv``.
-	- Запустить питоновский скрипт ``UniParser/analyze_adyghe.py`` и дождаться завершения его работы. (К сожалению, скрипт работает очень медленно: 50--200 словоформ словоформ в секунду, в зависимости от производительности компьютера.)
+	- Запустить питоновский скрипт ``analyzer/UniParser/analyze_adyghe.py`` и дождаться завершения его работы. (К сожалению, скрипт работает очень медленно: 50--200 словоформ словоформ в секунду, в зависимости от производительности компьютера.)
 
 3. Вы можете преобразовать словарь в любой другой удобный Вам формат и использовать его таким образом в своей системе.
 
@@ -51,9 +51,9 @@ This description can be used for morphological analysis of Adyghe texts in the f
 1. Use a preannotated list of words (about 400 thousand unique forms), based on the West Circassian corpus. Please contact the authors if you would like to use it (it's too large to be stored in a repository).
 
 2. Run the analyzer on a list of words that occur in your texts. Here is what you need to do:
-	- Put ``lexemes.txt``, ``paradigms.txt``, ``lex_rules.txt`` and ``bad_analyses.txt`` to ``UniParser``.
+	- Put ``lexemes.txt``, ``paradigms.txt``, ``lex_rules.txt`` and ``bad_analyses.txt`` to ``analyzer``.
 	- Put a list of words to be analyzed to the same directory. It should contain one word per line, followed by a tab and the word's frequency. (Frequencies are only used to count the share of analyzed words; if you don't need it, you can just write 1 as each word's frequency.) This file should be named ``wordlist.csv``.
-	- Run ``UniParser/analyze_adyghe.py`` with Python 3 and wait until it is done. (Unfortunately, it's rather slow; expect 50-200 words per second.)
+	- Run ``analyzer/UniParser/analyze_adyghe.py`` with Python 3 and wait until it is done. (Unfortunately, it's rather slow; expect 50-200 words per second.)
 	- Join the analyzed word lists from the three stages.
 We are currently working of simplifying the pipeline.
 
