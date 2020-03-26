@@ -1,0 +1,106 @@
+﻿-paradigm: polysynth
+ -flex: <.>.<.>
+  gramm: 
+ paradigm: polysynth_minus_9
+
+-paradigm: polysynth_minus_9      # absolutive prefixes
+ -flex: сы<.>.<.>//с<.>.<.>
+  gramm: 1.abs,sg.abs
+  gloss: 1sg.abs
+ -flex: ты<.>.<.>//т<.>.<.>
+  gramm: 1.abs,pl.abs
+  gloss: 1pl.abs
+ -flex: у<.>.<.>
+  gramm: 2.abs,sg.abs
+  gloss: 2sg.abs
+ -flex: шъу<.>.<.>
+  gramm: 2.abs,pl.abs
+  gloss: 2pl.abs
+ -flex: зы<.>.<.>//з<.>.<.>
+  gramm: rfl.abs
+  gloss: rfl.abs
+ -flex: <.>.<.>
+  gramm: 
+ paradigm: polysynth_minus_8
+
+-paradigm: polysynth_minus_8      # directive
+ -flex: къэ<.>.<.>//къы<.>.<.>//къ<.>.
+  gramm: dir
+  gloss: dir
+ -flex: <.>.<.>
+  gramm:
+ paradigm: polysynth_minus_4
+
+-paradigm: polysynth_minus_1      # causative
+ -flex: гъэ.<.>
+  gramm: caus
+  gloss: caus
+ -flex: .<.>
+  gramm:
+ paradigm: polysynth_past
+
+-paradigm: polysynth_minus_2_3    # dynamic prefix / optative + negative
+ -flex: э<.>.<.>//мэ<.>.<.>//ма<.>.<.>
+  gramm: dyn
+  gloss: dyn
+ -flex: мы<.>.<.>
+  gramm: neg
+  gloss: neg
+ -flex: орэ<.>.<.>
+  gramm: opt
+  gloss: opt
+ -flex: орэ|мы<.>.<.>
+  gramm: opt,neg
+  gloss: opt|neg
+ -flex: <.>.<.>
+  gramm: 
+ paradigm: polysynth_minus_1
+
+-paradigm: polysynth_minus_4     # agent-ergative markers
+ -flex: с<.>.<.>
+  gramm: 1.a,sg.a
+  gloss: 1sg.a
+ -flex: т<.>.<.>
+  gramm: 1.a,pl.a
+  gloss: 1pl.a
+ -flex: у<.>.<.>//п<.>.<.>//б<.>.<.>
+  gramm: 2.a,sg.a
+  gloss: 2sg.a
+ -flex: шъу<.>.<.>
+  gramm: 2.a,pl.a
+  gloss: 2pl.a
+ -flex: ы<.>.<.>//и<.>.<.>
+  gramm: 3.a,sg.a
+  gloss: 3sg.a
+ -flex: а<.>.<.>
+  gramm: 3.a,pl.a
+  gloss: 3pl.a
+ -flex: зы<.>.<.>//зэ<.>.<.>
+  gramm: rfl.a
+  gloss: rfl
+ -flex: зы<.>.<.>
+  gramm: rel.a
+  gloss: rel
+ -flex: зэрэ<.>.<.>
+  gramm: rec.a
+  gloss: rec
+ -flex: <.>.<.>
+  gramm: 
+ paradigm: polysynth_minus_2_3
+
+-paradigm: polysynth_past      # past tense suffix
+ -flex: .гъ<.>
+  gramm: pst
+  gloss: pst
+  regex-prev: ^.*[аоуыэеиюя][.<>]*$
+ -flex: .ыгъ<.>
+  gramm: pst
+  gloss: pst
+  regex-prev: ^.*[^аоуыэеиюя.<>][.<>]*$
+ -flex: .<.>
+  gramm:
+ paradigm: polysynth_stub
+
+-paradigm: polysynth_stub
+ -flex: .
+  gramm: 

@@ -1,0 +1,30 @@
+﻿# simple clitics
+
+-clitic
+ lex: encl
+ type: en
+ gramm: cl
+ gloss: enclitic1
+
+-clitic
+ lex: procl
+ type: pro
+ gramm: cl
+ gloss: proclitic1
+
+# clitics with restrictions
+
+-clitic
+ lex: encl2
+ type: en
+ gramm: cl
+ gloss: enclitic2
+ regex-wf: ^.*x2$
+
+-clitic
+ lex: procl2
+ type: pro
+ gramm: cl
+ gloss: proclitic2
+ regex-lex: ^.*3$
+
