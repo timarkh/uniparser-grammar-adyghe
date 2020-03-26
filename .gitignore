@@ -1,0 +1,15 @@
+**.pyc
+**.idea/**
+**/errors.log
+**/wordlist.csv-parsed-main.txt
+**/wordlist.csv-unparsed-main.txt
+**/wordlist-unparsed-all.csv
+**/wordlist-unparsed-o.csv
+**/wordlist.csv-parsed-NtoV.txt
+**/wordlist.csv-unparsed-NtoV.txt
+**/wordlist.csv-parsed-o.txt
+**/wordlist.csv-unparsed-o.txt
+**/wordlist-o.csv
+**/wordlist-full.csv
+**/wordlist.csv-parsed-final.txt
+
