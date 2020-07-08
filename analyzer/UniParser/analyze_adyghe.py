@@ -18,11 +18,17 @@ if __name__ == '__main__':
     analyze('../wordlist_full.csv', '../paradigms.txt', lexFile, lexRulesFile, derivFile, conversionFile,
             cliticFile, delAnaFile, '../wordlist.csv-parsed-main.txt', '../wordlist.csv-unparsed-main.txt',
             errorFile, xmlOutput, False, parserVerbosity, freqListSeparator, parsingMethod=parsingMethod)
-    split_o_wordlist('../wordlist_full.csv', '../wordlist.csv-unparsed-main.txt')
+    nOWords = split_o_wordlist('../wordlist_full.csv', '../wordlist.csv-unparsed-main.txt')
     analyze('../wordlist-unparsed-all.csv', '../paradigms-NtoV.txt', lexFile, lexRulesFile, derivFile, conversionFile,
             cliticFile, delAnaFile, '../wordlist.csv-parsed-NtoV.txt', '../wordlist.csv-unparsed-NtoV.txt',
             errorFile, xmlOutput, False, parserVerbosity, freqListSeparator, parsingMethod=parsingMethod)
-    analyze('../wordlist-o.csv', '../paradigms.txt', lexFile, lexRulesFile, derivFile, conversionFile,
-            cliticFile, delAnaFile, '../wordlist.csv-parsed-o.txt', '../wordlist.csv-unparsed-o.txt',
-            errorFile, xmlOutput, False, parserVerbosity, freqListSeparator, parsingMethod=parsingMethod)
+    if nOWords > 0:
+        analyze('../wordlist-o.csv', '../paradigms.txt', lexFile, lexRulesFile, derivFile, conversionFile,
+                cliticFile, delAnaFile, '../wordlist.csv-parsed-o.txt', '../wordlist.csv-unparsed-o.txt',
+                errorFile, xmlOutput, False, parserVerbosity, freqListSeparator, parsingMethod=parsingMethod)
+    else:
+        fEmpty = open('../wordlist.csv-unparsed-o.txt')
+        fEmpty.close()
+        fEmpty = open('../wordlist.csv-parsed-o.txt')
+        fEmpty.close()
     finalize()
