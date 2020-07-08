@@ -84,6 +84,7 @@ def split_o_wordlist(wordlistName, unparsedName):
     """
     Read the word lists and write a list of unparsed words
     that contain an О character, replacing it with УЭ.
+    Return the number of words written.
     """
     fAll = open(wordlistName, 'r', encoding='utf-8-sig')
     fUnparsed = open(unparsedName, 'r', encoding='utf-8-sig')
@@ -94,6 +95,7 @@ def split_o_wordlist(wordlistName, unparsedName):
         word, freq = line.strip().split('\t')
         freqDict[word] = int(freq)
     fAll.close()
+    nOWords = 0
     fOutO = open('../wordlist-o.csv', 'w', encoding='utf-8-sig')
     fOutAll = open('../wordlist-unparsed-all.csv', 'w', encoding='utf-8-sig')
     for line in fUnparsed:
@@ -104,8 +106,10 @@ def split_o_wordlist(wordlistName, unparsedName):
         if m is None:
             continue
         fOutO.write(m.group(1) + 'уэ' + m.group(2) + '\t' + str(freq) + '\n')
+        nOWords += 1
     fOutO.close()
     fOutAll.close()
+    return nOWords
 
 
 def postprocess_parsed_wordlist(fnamesIn, fnameOut):
