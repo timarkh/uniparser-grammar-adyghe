@@ -758,24 +758,24 @@
  -flex: .мэ<.>
   gramm: obl,pl
   gloss: OBL.PL
- -flex: .м|кӏэ<.>
+ -flex: .м|кӏэ<.>//.м|кӏэрэ<.>
   gramm: obl,ins
   gloss: OBL|INS
- -flex: .м|кӏ<.>
+ -flex: .м|кӏ<.>//.м|кӏэр.<.>
   gramm: obl,ins
   gloss: OBL|INS
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .м|рэ|кӏэ<.>
+ -flex: .м|рэ|кӏэ<.>//.м|рэ|кӏэрэ<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
  -flex: .м|рэ|кӏ<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .кӏэ<.>
+ -flex: .кӏэ<.>//.кӏэрэ<.>
   gramm: ins
   gloss: INS
- -flex: .кӏ<.>
+ -flex: .кӏ<.>//.кӏэр<.>
   gramm: ins
   gloss: INS
   regex-next: ^[.,<>0-9]*[ие].*
@@ -805,7 +805,7 @@
  -flex: .р<.>
   gramm: abs
   gloss: ABS
- -flex: .щ<.>
+ -flex: .щ<.>//.й<.>
   gramm: obl
   gloss: OBL
  -flex: .м<.>
@@ -815,17 +815,17 @@
  -flex: .мэ<.>
   gramm: obl,pl
   gloss: OBL.PL
- -flex: .м|кӏэ<.>//.щ|кӏэ<.>
+ -flex: .м|кӏэ<.>//.щ|кӏэ<.>//.й|кӏэ<.>//.м|кӏэрэ<.>//.щ|кӏэрэ<.>//.й|кӏэрэ<.>
   gramm: obl,ins
   gloss: OBL|INS
- -flex: .м|кӏ<.>//.щ|кӏ<.>
+ -flex: .м|кӏ<.>//.щ|кӏ<.>//.й|кӏ<.>//.м|кӏэр<.>//.щ|кӏэр<.>//.й|кӏэр<.>
   gramm: obl,ins
   gloss: OBL|INS
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .м|рэ|кӏэ<.>//.щ|рэ|кӏэ<.>
+ -flex: .м|рэ|кӏэ<.>//.щ|рэ|кӏэ<.>//.й|рэ|кӏэ<.>//.м|рэ|кӏэрэ<.>//.щ|рэ|кӏэрэ<.>//.й|рэ|кӏэрэ<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
- -flex: .м|рэ|кӏ<.>//.щ|рэ|кӏ<.>
+ -flex: .м|рэ|кӏ<.>//.щ|рэ|кӏ<.>//.й|рэ|кӏ<.>//.м|рэ|кӏэр<.>//.щ|рэ|кӏэр<.>//.й|рэ|кӏэр<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
   regex-next: ^[.,<>0-9]*[ие].*
@@ -865,9 +865,12 @@
  -flex: .ти
   gramm: cs
   gloss: CS
- -flex: .шъ
+ -flex: .шъ//.шъы//.шъыры
   gramm: cs2
   gloss: CS2
+ -flex: .шъы|ри
+  gramm: cs2,add
+  gloss: CS2|ADD
  -flex: .а
   gramm: q
   gloss: Q
@@ -1754,13 +1757,13 @@
   gloss: LOC
   paradigm: V_minus_6
   paradigm: V_minus_5
- -flex: .тыр<.>.<.>
+ -flex: .тыр<.>.<.>//.тр<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_6
   paradigm: V_minus_5
   regex-next: ^[.,<>0-9]*[иеяа].*
- -flex: .тыры<.>.<.>
+ -flex: .тыры<.>.<.>//.тры<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_6
@@ -1899,13 +1902,13 @@
   gloss: LOC
   paradigm: V_minus_6_intr
   paradigm: V_minus_5_intr
- -flex: .тыр<.>.<.>
+ -flex: .тыр<.>.<.>//.тр<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_6_intr
   paradigm: V_minus_5_intr
   regex-next: ^[.,<>0-9]*[иеяа].*
- -flex: .тыры<.>.<.>
+ -flex: .тыры<.>.<.>//.тры<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_6_intr
@@ -2090,7 +2093,7 @@
   paradigm: V_minus_2_3
   paradigm: V_minus_1
   paradigm: V_minus_1_empty
- -flex: .тыр<.>.<.>
+ -flex: .тыр<.>.<.>//.тр<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_4
@@ -2364,7 +2367,7 @@
   paradigm: V_minus_1
   paradigm: V_minus_1_empty
   paradigm: V_minus_4_intr
- -flex: .тыр<.>.<.>
+ -flex: .тыр<.>.<.>//.тр<.>.<.>
   gramm: loc
   gloss: LOC
   paradigm: V_minus_2_3
@@ -3377,24 +3380,24 @@
  -flex: .мэ<.>
   gramm: obl,pl
   gloss: OBL.PL
- -flex: .кӏэ<.>
+ -flex: .кӏэ<.>//.кӏэрэ<.>
   gramm: ins
   gloss: INS
- -flex: .кӏ<.>
+ -flex: .кӏ<.>//.кӏэр<.>
   gramm: ins
   gloss: INS
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .м|кӏэ<.>
+ -flex: .м|кӏэ<.>//.м|кӏэрэ<.>
   gramm: obl,ins
   gloss: OBL|INS
- -flex: .м|кӏ<.>
+ -flex: .м|кӏ<.>//.м|кӏэр<.>
   gramm: obl,ins
   gloss: OBL|INS
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .м|рэ|кӏэ<.>
+ -flex: .м|рэ|кӏэ<.>//.м|рэ|кӏэрэ<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
- -flex: .м|рэ|кӏ<.>
+ -flex: .м|рэ|кӏ<.>//.м|рэ|кӏэр<.>
   gramm: obl,ins,coord
   gloss: OBL|COORD|INS
   regex-next: ^[.,<>0-9]*[ие].*
@@ -3417,7 +3420,7 @@
   gramm: cond
   gloss: COND
   regex-next: ^[.,<>0-9]*[ие].*
- -flex: .зэ<.>
+ -flex: .зэ<.>//.зэрэ<.>
   gramm: sim
   gloss: SIM
  -flex: .з<.>

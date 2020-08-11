@@ -67784,6 +67784,12 @@
  paradigm: poly_CONJ
  trans_ru: но
 -lexeme
+ lex: арау
+ stem: .арау.
+ gramm: CONJ
+ paradigm: poly_CONJ
+ trans_ru: но
+-lexeme
  lex: аужыпкъ
  stem: .аужыпкъэ.
  gramm: A
@@ -74568,6 +74574,18 @@
  gramm: A|A,alt_stem,alt_stem1|A
  paradigm: poly_A
  trans_ru: виновный; чужой
+-lexeme
+ lex: мыстын
+ stem: .мысты.//.мыст.
+ gramm: V,intr
+ paradigm: poly_V_intr
+ trans_ru: FILLER
+-lexeme
+ lex: мыст
+ stem: .мысты.//.мыст.
+ gramm: N
+ paradigm: poly_N
+ trans_ru: FILLER
 -lexeme
  lex: тхъытхъын
  stem: .тхъытхъы.//.тхъытхъ.
@@ -83423,7 +83441,7 @@
  trans_ru: благоденствовать
 -lexeme
  lex: дэжь
- stem: .дэжь.
+ stem: .дэжь.//.дыжь.
  gramm: POST
  paradigm: poly_POST
  trans_ru: к; возле
